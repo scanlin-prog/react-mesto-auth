@@ -1,4 +1,4 @@
-# Проект: [Место](https://scanlin-prog.github.io/mesto-react "Сайт от Ротаря")
+# Проект: [Место](https://scanlin-prog.github.io/react-mesto-auth "Сайт от Ротаря")
 
 ### О проекте
 

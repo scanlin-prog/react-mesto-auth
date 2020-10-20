@@ -1,6 +1,6 @@
 {
-  "homepage": "http://scanlin-prog.github.io/mesto-react",
-  "name": "mesto-react",
+  "homepage": "https://scanlin-prog.github.io/react-mesto-auth/",
+  "name": "react-mesto-auth",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

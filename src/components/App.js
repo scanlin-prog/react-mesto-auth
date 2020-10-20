@@ -143,7 +143,7 @@ function App() {
             setUser({
               email: res.data.email
             })
-            history.push('/mesto-react/main');
+            history.push('/react-mesto-auth/main');
           }
         })
         .catch(() => {
@@ -164,15 +164,15 @@ function App() {
     <div className="page">
       <CurrentUserContext.Provider value={currentUser}>
         <Switch>
-          <ProtectedRoute path="/mesto-react/main" loggedIn={loggedIn} user={user} component={Main} handleLogout={handleLogout} onEditProfile={handleEditProfileClick} onAddPlace={handleAddPlaceClick} onEditAvatar={handleEditAvatarClick} onCardClick={handleCardClick} cards={cards} onCardLike={handleCardLike} onCardDelete={handleCardDelete} />
-          <Route path="/mesto-react/sign-up">
+          <ProtectedRoute path="/react-mesto-auth/main" loggedIn={loggedIn} user={user} component={Main} handleLogout={handleLogout} onEditProfile={handleEditProfileClick} onAddPlace={handleAddPlaceClick} onEditAvatar={handleEditAvatarClick} onCardClick={handleCardClick} cards={cards} onCardLike={handleCardLike} onCardDelete={handleCardDelete} />
+          <Route path="/react-mesto-auth/sign-up">
             <Register openInfoTooltip={openInfoTooltip} />
           </Route>
-          <Route path="/mesto-react/sign-in">
+          <Route path="/react-mesto-auth/sign-in">
             <Login handleLogin={handleLogin} />
           </Route>
-          <Route exact path="/mesto-react/">
-            {loggedIn ? <Redirect to="/mesto-react/main" /> : <Redirect to="/mesto-react/sign-in" />}
+          <Route exact path="/react-mesto-auth/">
+            {loggedIn ? <Redirect to="/react-mesto-auth/main" /> : <Redirect to="/react-mesto-auth/sign-in" />}
           </Route>
         </Switch>
         <Footer />

@@ -9,7 +9,7 @@ function Main(props) {
 
     return (
         <>
-            <Header sign={'/mesto-react/sign-in'} signLink={'Выйти'} handleLogout={props.handleLogout} >
+            <Header sign={'/react-mesto-auth/sign-in'} signLink={'Выйти'} handleLogout={props.handleLogout} >
                 <p className="header__nickname">{props.user.email}</p>
             </Header>
             <main className="content">
