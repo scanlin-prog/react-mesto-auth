@@ -1,0 +1,11 @@
+.profile__info-heading {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .profile__info-heading {
+        margin-bottom: 0;
+        justify-content: center;
+    }
+}

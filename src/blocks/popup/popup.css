@@ -1,0 +1,33 @@
+@import url(./__container/popup__container.css);
+@import url(./__title/popup__title.css);
+@import url(./__field/popup__field.css);
+@import url(./__input/popup__input.css);
+@import url(./__input/_first/popup__input_first.css);
+@import url(./__input/_second/popup__input_second.css);
+@import url(./__input/_type_error/popup__input_type_error.css);
+@import url(./__input-error/popup__input-error.css);
+@import url(./__input-error/_active/popup__input-error_active.css);
+@import url(./__button-create/popup__button-create.css);
+@import url(./__button-create/_inactive/popup__button-create_inactive.css);
+@import url(./__container-image/popup__container-image.css);
+@import url(./__image/popup__image.css);
+@import url(./__image-title/popup__image-title.css);
+@import url(./__button-close/popup__button-close.css);
+@import url(./__button-close/_theme_image/popup__button-close_theme_image.css);
+@import url(./__info-title/popup__info-title.css);
+@import url(./__info-image/popup__info-image.css);
+
+.popup {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(14, 13, 13, 0.5);
+    top: 0;
+    left: 0;
+    align-items: flex-start;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s linear, visibility .3s linear;
+}

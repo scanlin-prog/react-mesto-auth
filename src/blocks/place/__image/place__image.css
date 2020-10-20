@@ -1,0 +1,12 @@
+.place__image {
+    border-radius: 10px 10px 0 0;
+    height: 282px;
+    width: 282px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
+.place__image:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,18 @@
+@import url(./__image/place__image.css);
+@import url(./__title/place__title.css);
+@import url(./__field-like/place__field-like.css);
+@import url(./__button-like/place__button-like.css);
+@import url(./__button-like-number/place__button-like-number.css);
+@import url(./__button-remove/place__button-remove.css);
+@import url(./__button-remove/_active/place__button-remove_active.css);
+@import url(./__button-like/_active/place__button-like_active.css);
+
+.place {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    max-width: 282px;
+    margin: 0 auto;
+}
