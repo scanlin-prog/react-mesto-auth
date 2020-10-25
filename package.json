@@ -1,5 +1,5 @@
 {
-  "homepage": "https://scanlin-prog.github.io/react-mesto-auth/",
+  "homepage": "https://scanlin-prog.github.io",
   "name": "react-mesto-auth",
   "version": "0.1.0",
   "private": true,
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "scp -r ./build/* scanlin@130.193.57.86:/home/scanlin/news-frontend",
     "start": "react-scripts start --open --watch",
     "build": "react-scripts build",
     "test": "react-scripts test",
