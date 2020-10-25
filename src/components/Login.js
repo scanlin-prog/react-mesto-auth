@@ -44,7 +44,7 @@ function Login(props) {
 
     return (
         <>
-            <Header sign={'/react-mesto-auth/sign-up'} signLink={'Регистрация'} />
+            <Header sign={'/sign-up'} signLink={'Регистрация'} />
             <div className="login">
                 <p className="login__welcome">
                     Вход
@@ -56,7 +56,7 @@ function Login(props) {
                 </form>
                 <div className="login__signup">
                     <p>Ещё не зарегистрированы?</p>
-                    <Link to={'/react-mesto-auth/sign-up'} className="login__signup-link">Регистрация</Link>
+                    <Link to={'/sign-up'} className="login__signup-link">Регистрация</Link>
                 </div>
             </div>
         </>

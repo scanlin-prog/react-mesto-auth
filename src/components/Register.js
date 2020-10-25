@@ -25,7 +25,7 @@ function Register(props) {
         .then((res) => {
             if(res) {
                 props.openInfoTooltip(true, 'Вы успешно зарегистрировались!')
-                history.push('/react-mesto-auth/sign-in');
+                history.push('/sign-in');
             } else {
                 props.openInfoTooltip(false, 'Что-то пошло не так! Попробуйте еще раз.')
             }
@@ -35,7 +35,7 @@ function Register(props) {
 
     return(
         <>
-            <Header sign={'/react-mesto-auth/sign-in'} signLink={'Войти'} />
+            <Header sign={'/sign-in'} signLink={'Войти'} />
             <div className="login">
                 <p className="login__welcome">
                     Регистрация
@@ -47,7 +47,7 @@ function Register(props) {
                 </form>
                 <div className="login__signup">
                     <p>Уже зарегистрированы?</p>
-                    <Link to={'/react-mesto-auth/sign-in'} className="login__signup-link">Войти</Link>
+                    <Link to={'/sign-in'} className="login__signup-link">Войти</Link>
                 </div>
             </div>
         </>
