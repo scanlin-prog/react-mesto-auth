@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://auth.nomoreparties.co';
+export const BASE_URL = 'https://api.teut.students.nomoreparties.co';
 
 function handleResponce(response) {
     if (response.ok) {
@@ -9,14 +9,14 @@ function handleResponce(response) {
     }
 }
 
-export const register = (email, password) => {
+export const register = (email, password, name, about, avatar) => {
     return fetch(`${BASE_URL}/signup`, {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({email, password})
+        body: JSON.stringify({email, password, name, about, avatar})
     })
         .then(handleResponce)
 }
@@ -35,7 +35,7 @@ export const authorize = (email, password) => {
 
 export const checkToken = (token) => {
     return fetch(`${BASE_URL}/users/me`, {
-        method: 'Get',
+        method: 'GET',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',

@@ -32,8 +32,8 @@ function Login(props) {
             .then((data) => {
                 if (data.token) {
                     localStorage.setItem('token', data.token);
-                    resetForm();
                     props.handleLogin();
+                    resetForm();
                 } else {
                     return
                 }

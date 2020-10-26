@@ -140,9 +140,7 @@ function App() {
         .then((res) => {
           if (res) {
             setLoggedIn(true);
-            setUser({
-              email: res.data.email
-            })
+            setCurrentUser(res)
             history.push('/main');
           }
         })
@@ -164,7 +162,7 @@ function App() {
     <div className="page">
       <CurrentUserContext.Provider value={currentUser}>
         <Switch>
-          <ProtectedRoute path="/main" loggedIn={loggedIn} user={user} component={Main} handleLogout={handleLogout} onEditProfile={handleEditProfileClick} onAddPlace={handleAddPlaceClick} onEditAvatar={handleEditAvatarClick} onCardClick={handleCardClick} cards={cards} onCardLike={handleCardLike} onCardDelete={handleCardDelete} />
+          <ProtectedRoute path="/main" loggedIn={loggedIn} user={currentUser} component={Main} handleLogout={handleLogout} onEditProfile={handleEditProfileClick} onAddPlace={handleAddPlaceClick} onEditAvatar={handleEditAvatarClick} onCardClick={handleCardClick} cards={cards} onCardLike={handleCardLike} onCardDelete={handleCardDelete} />
           <Route path="/sign-up">
             <Register openInfoTooltip={openInfoTooltip} />
           </Route>

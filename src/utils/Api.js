@@ -42,7 +42,7 @@ class Api {
     }
 
     toggleLikeCard(id, like) {
-        return fetch(`${this._baseurl}/cards/likes/${id}`, {
+        return fetch(`${this._baseurl}/cards/${id}/likes`, {
             headers: this._headers,
             method: like ? 'PUT' : 'DELETE'
         })
@@ -70,9 +70,9 @@ class Api {
 }
 
 export const api = new Api({
-    baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-13',
+    baseUrl: 'https://api.teut.students.nomoreparties.co',
     headers: {
-      authorization: '66ad8adf-40e8-490a-9692-6e1f4ed571f6',
-      'Content-Type': 'application/json'
+        'Authorization': `Bearer ${localStorage.getItem('token')}`,
+        'Content-Type': 'application/json'
     }
-  })
+})
