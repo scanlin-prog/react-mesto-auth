@@ -70,7 +70,7 @@ class Api {
 }
 
 export const api = new Api({
-    baseUrl: 'https://api.teut.students.nomoreparties.co',
+    baseUrl: 'http://localhost:3001',
     headers: {
         'Authorization': `Bearer ${localStorage.getItem('token')}`,
         'Content-Type': 'application/json'

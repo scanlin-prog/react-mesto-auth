@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://api.teut.students.nomoreparties.co';
+export const BASE_URL = 'http://localhost:3001';
 
 function handleResponce(response) {
     if (response.ok) {

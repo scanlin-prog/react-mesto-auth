@@ -25,7 +25,6 @@ function App() {
   const [currentUser, setCurrentUser] = React.useState({});
   const [cards, setCards] = React.useState([]);
   const [loggedIn, setLoggedIn] = React.useState(false);
-  const [user, setUser] = React.useState({});
   const [infoPopup, setInfoPopup] = React.useState({});
 
   const history = useHistory();
